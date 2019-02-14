@@ -77,6 +77,13 @@ app.get('/maintenance', (req, res) => {
     })
 });
 
+app.get('/portfolio', (req, res) => {
+    res.render('portfolio.hbs', {
+        pageTitle: 'Portfolio',
+        message: `My portfolio's list`
+    })
+});
+
 
 //app.listen(3000);
 
